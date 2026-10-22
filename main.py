@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-🎬 어제의 박스오피스 (KOBIS 공식 API)
-
-- 인증키는 코드에 쓰지 않고, 스트림릿 비밀 금고(secrets)의 KOBIS_KEY 에서 읽어요.
-- 조회 날짜는 '한국 시간 기준 어제'를 자동으로 계산해요. (서버 시계가 한국 시간이 아니어도 OK)
-- 실패 / 오류 상자(faultInfo) / 빈 목록일 때는 빈 화면 대신 확인할 점을 한국어로 안내해요.
-"""
-
 from datetime import datetime, timedelta, timezone
 
 import altair as alt   # 막대그래프용 (streamlit 설치 시 같이 설치돼요)
